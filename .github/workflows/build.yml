@@ -223,7 +223,7 @@ jobs:
                       override fun onResults(results: Bundle?) {
                           level = 0f
                           val text = results
-                              ?.getStringArrayList(SpeechRecognizer.RECOGNITION_RESULTS)
+                              ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
                               ?.firstOrNull().orEmpty()
                           heard = text
                           status = "RESPONDIENDO"
