@@ -246,7 +246,7 @@ jobs:
                       putExtra(RecognizerIntent.EXTRA_LANGUAGE, "es-AR")
                       putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE, false)
                   }
-                  recognizer.startListening(intent)
+                  recognizer.cancel();recognizer.startListening(intent)
               }
 
               val permissionLauncher = rememberLauncherForActivityResult(
